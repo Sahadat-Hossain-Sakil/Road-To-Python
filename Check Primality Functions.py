@@ -1,4 +1,4 @@
-# prime_or_not(num) function will check the input number if is prime or not 
+# prime_or_not(num) function will check the input number if it's prime or not 
 
 def prime_or_not (num):            
     a = [i for i in range(2, num) if num % i ==0]
