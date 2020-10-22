@@ -2,6 +2,7 @@ import requests
 from bs4 import BeautifulSoup
 
 # We can use any weblink for decode, but we must specify the class 
+# Here we find all headlines of a newspaper Ex. = ("The Guardian")
 
 link = "https://www.theguardian.com/international" 
 r = requests.get(link).text
