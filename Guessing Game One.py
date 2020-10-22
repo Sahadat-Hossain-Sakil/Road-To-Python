@@ -1,6 +1,7 @@
 import random
 print("Find the random number")
-s = int(random.randint(0, 101))
+s = int(random.randint(0, 101)) # It will choose a random number from 0 to 100 and
+                                # we need to guess the number.
 
 guess = int(input("Please guess a number between 1 to 100 : "))
 c = 1
