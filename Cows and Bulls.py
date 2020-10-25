@@ -1,3 +1,9 @@
+# " Cows and bulls " is a little game between user and computer.
+# In this game computer will choose a ramdom 4 digit number and user need to find it.
+# The game will ask user to guess a number. For every digit the user guessed correct computer will give a cow
+# and for every digit the user guess correct but in worng place computer will give a bull. Like :
+# random generated number = 3465  , user guessed = 3764 so the answare will be 2-cows and 1-bulls
+
 import random
 from collections import Counter
 
@@ -21,7 +27,7 @@ def input_num():
 
 # print(ran_num)
 # print(num)
-
+print("\n ---Welcome to Cows and Bulls Game !--- \n")
 num = input_num()
 while True:
 	cows = 0 # cows for every match of digits in same place both user number and random number 
@@ -35,12 +41,12 @@ while True:
 				else :
 					bulls+=1
 					break
-	print(" %d cows"%cows, "%d bulls"%bulls)
+	print(" %d - cows"%cows, " \n %d - bulls"%bulls)
 	if cows == 4:
 		print(" Congratulations!!! you find the number ")
 		break
 	else:
-		print("\nTry with different number!!")
+		print("\nI win!!  Try again ")
 		num = input_num()
 
 
