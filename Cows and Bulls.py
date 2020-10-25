@@ -1,7 +1,7 @@
 # " Cows and bulls " is a little game between user and computer.
-# In this game computer will choose a ramdom 4 digit number and user need to find it.
-# The game will ask user to guess a number. For every digit the user guessed correct computer will give a cow
-# and for every digit the user guess correct but in worng place computer will give a bull. Like :
+# In this game computer will choose a ramdom 4 digit number and user need to find it.The game will ask 
+# user to guess a number. For every digit the user guessed correctly  in right place computer will give a cow
+# and for every digit the user guessed correctly but in worng place computer will give a bull. Like :
 # random generated number = 3465  , user guessed = 3764 so the answare will be 2-cows and 1-bulls
 
 import random
