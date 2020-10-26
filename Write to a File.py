@@ -2,7 +2,7 @@ import requests
 from bs4 import BeautifulSoup
 
 # Here we create a .txt file with ' open() ' function and write into it. 
-# This algorithm will decode a web page and get all file as text for some specific class in page HTML or CSS.
+# This algorithm will decode a web page and get all file as text for some specific classes in page HTML or CSS.
 # And then write into the .txt file.
 
 link = "https://www.theguardian.com/international"
