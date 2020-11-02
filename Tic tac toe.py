@@ -1,6 +1,6 @@
 from itertools import cycle
-
-
+import os
+import sys
 ##########################  Drawing Game-board  ###########################
 
 def draw_board(board):
@@ -105,8 +105,6 @@ def find_win(played_board, player_num):
 ##----------------------- Game Loop ------------------------##
 
 print("\n<<<--------------- Welcome to Tic-Tac-Toe Game ---------------->>>\n")
-show_board = [[0 for i in range(3)] for j in range(3)]
-draw_board(show_board)
 loop = True
 while loop:
 	game_board = [[0 for i in range(3)] for j in range(3)]
@@ -114,11 +112,11 @@ while loop:
 	k = cycle(player_list)
 	count = 0
 	game_loop = True
-	while game_loop:	
+	while game_loop:			
 		player = next(k)
-		player_input(game_board, player)
-		count += 1
 		draw_board(game_board)
+		player_input(game_board, player)
+		count += 1		
 		if find_win(game_board, player) or count == 10:
 			if count == 10:
 				print("Oops!! This has been drawed ")
@@ -133,3 +131,6 @@ while loop:
 			else:
 				print("Input Error * Closing the game * ")
 				loop = False
+		os.system('cls')
+
+sys.stdin.readline()
